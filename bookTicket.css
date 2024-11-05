@@ -1,0 +1,153 @@
+body{
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-size: cover;
+  }
+#navbar{
+    height: 8vh;
+    background: linear-gradient(135deg,rgba(225,225,225,0.1),rgba(225,225,225,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+#logo{
+    height: 6vh;
+    background-image: url(images/Screenshot_2024-10-04_023540-removebg-preview.png);
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#blur{
+    background: linear-gradient(135deg,rgba(225,225,225,0.1),rgba(225,225,225,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.borderr{
+    border: 3px solid transparent;
+}
+.borderr:hover{
+    border: 3px solid rgb(123, 153, 229);
+    border-radius: 10px;
+}
+.opt-select{
+    height: 4vh;
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    top: 15vh;
+    right: 39vw;
+    cursor: pointer;
+}
+#searchBar{
+    height: 24vh;
+    width: 85.6vw;
+    border-radius: 15px;
+}
+.from,.to,.datee,.class{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid rgb(102, 102, 103);
+}
+.from{
+    border-radius: 11px 0px 0px 11px;
+}
+.class{
+    border-radius: 0px 11px 11px 0px;
+}
+.from p,.to p,.datee p,.class p{
+    font-style: italic;
+    font-size: 1.85vw;
+    color: white;
+}
+#stationsFrom,#stationsTo {
+    width: 26vw;
+    border: 0px solid;
+}
+.select2-container--default .select2-selection--single {
+    height: 100%;
+    width: 26vw;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    color: white;
+    font-weight: bold;
+    border: 0px solid;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 6.7vh;
+    font-size: 2.5vw;
+    width: 26vw;
+    color: white;
+    border: 0px solid;
+}
+.select2-container--default .select2-dropdown {
+    background-color: transparent;
+    width: 26vw;
+}
+.select2-container--default .select2-results__option {
+    font-size: 0.85vw;
+    color: white;
+    width: 26vw;
+}
+input:focus{
+    outline: none;
+}
+.from select{
+    height:38vh;
+}
+#stationCodeFrom,#stationCodeTo{
+    height :6.7vh;
+    width: 19.7vw;
+    font-size: 1.85vw;
+    color: white;
+    margin-top: 10px;
+    background-color: transparent;
+    position: relative;
+    left: 20vw;
+    top: 3vh;
+}
+input[type="date"] {
+    width: 13vw;  
+    height: 6.7vh;             
+    border: 0px solid transparent; 
+    border-radius: 5px;        
+    font-size: 1.85vw;           
+    background-color: transparent; 
+    color: white;   
+    font-weight: bold;
+    position: relative;
+    left: 0.85vw;
+    top: 4vh;     
+}
+input[type="date"]:focus {
+    outline: none;             
+    border-color: #0056b3;    
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+#day-output {
+    color: white;
+    font-size: 1.85vw;
+    position: relative;
+    left: 3vw;
+    top: 5vh;
+}
+#class {
+    height: 100%;
+    width: 100%;
+    border: 0px solid transparent;
+    background-color: transparent;
+    font-size: 1.85vw;
+    font-weight: bold;
+    color: white;
+    outline: none;
+}
+#class option {
+    background-color: transparent;
+    color: #000; 
+}
+#day-output{
+    font-size: 1.85vw;
+}
