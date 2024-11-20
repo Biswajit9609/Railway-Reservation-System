@@ -1,77 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Easy-Rail</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Reservation System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom Styles */
+    .hero { background-color: #007bff; color: white; padding: 100px 0; text-align: center; }
+    .features, .pricing, .steps, .testimonials, .contact, .footer { padding: 50px 0; }
+    .cta { background-color: #007bff; color: white; padding: 50px 0; text-align: center; }
+    .footer { background-color: #343a40; color: white; }
+    .feature-icon { font-size: 2em; color: #007bff; }
+    #opt,#dropdownMenuButton{
+      border: 2px solid transparent;
+      background-color: transparent;
+      border-radius: 8px;
+    }
+    #opt:hover,#dropdownMenuButton:hover{
+      border: 2px solid white;
+      background-color: transparent;
+    }
+    #dropdownMenuButton:active{
+      border: 2px solid white;
+      background-color: transparent;
+    }
+    #heros{
+      background-image: url(images/ranjit-pradhan-e1IhTww3XMg-unsplash.jpg);
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="row">
-                    <nav class="navbar navbar-expand-lg" id="blur">
-                        <div class="container-fluid">
-                          <a class="navbar-brand ml-3" href="#"  style="color: white;">Easy-Rail</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                              <li class="nav-item me-3">
-                                <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
-                              </li>
-                              <li class="nav-item me-3">
-                                <a class="nav-link" href="#" style="color: white;">Features</a>
-                              </li>
-                              <li class="nav-item me-3">
-                                <a class="nav-link" href="#" style="color: white;">Pricing</a>
-                              </li>
-                              <li class="nav-item dropdown me-3">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-                                  Book Train Ticket
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Book Train Ticket</a></li>
-                                  <li><a class="dropdown-item" href="#">PNR Status Check</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </div>
-                <div class="row">
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/wp12183303-vande-bharat-wallpapers.jpg" class="d-block w-100" alt="..." id="wll">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/wp5521998-indian-railway-wallpapers.jpg" class="d-block w-100" alt="..." id="wll">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/wp5522129-indian-railway-wallpapers.jpg" class="d-block w-100" alt="..." id="wll">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                </div>
-                </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Easy Rail</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html" id="opt" style="color: white;">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="login.html" id="opt" style="color: white;">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="register.html" id="opt" style="color: white;">Sign Up</a></li>
+      <li class="nav-item"><a class="nav-link" href="offers.html" id="opt" style="color: white;">Offers</a></li>
+      <li class="nav-item"><a class="nav-link" href="contactUs.html" id="opt" style="color: white;">Contact Us</a></li>
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;;">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="bookTicket.html">Book Railway Ticket</a>
+            <a class="dropdown-item" href="pnr.html">PNR Status Check</a>
         </div>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="heros">
+  <div class="container">
+    <h1>Fast and Convenient Railway Reservations</h1>
+    <p>Book your tickets quickly and easily with our reliable railway reservation system.</p>
+    <a href="#cta" class="btn btn-light btn-lg">Get Started</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features text-center">
+  <div class="container">
+    <h2>Features</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-icon mb-3"><i class="fas fa-train"></i></div>
+        <h4>Easy Booking</h4>
+        <p>Quickly book your tickets with our user-friendly interface.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-icon mb-3"><i class="fas fa-clock"></i></div>
+        <h4>Real-time Schedules</h4>
+        <p>Stay updated with accurate train schedules and delays.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-icon mb-3"><i class="fas fa-shield-alt"></i></div>
+        <h4>Secure Payments</h4>
+        <p>Enjoy secure and reliable online payment options.</p>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section id="cta" class="cta">
+  <div class="container">
+    <h2>Ready to Book Your Train Journey?</h2>
+    <a href="#pricing" class="btn btn-light btn-lg">Check Pricing</a>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing text-center">
+  <div class="container">
+    <h2>Pricing</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Basic</h4>
+        <p>Starting from $10</p>
+        <button class="btn btn-primary">Select</button>
+      </div>
+      <div class="col-md-4">
+        <h4>Standard</h4>
+        <p>Starting from $20</p>
+        <button class="btn btn-primary">Select</button>
+      </div>
+      <div class="col-md-4">
+        <h4>Premium</h4>
+        <p>Starting from $30</p>
+        <button class="btn btn-primary">Select</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Steps Section -->
+<section id="steps" class="steps text-center">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Step 1</h4>
+        <p>Select your route and schedule.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Step 2</h4>
+        <p>Choose your preferred seat and class.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Step 3</h4>
+        <p>Complete the booking and enjoy your trip!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials text-center bg-light">
+  <div class="container">
+    <h2>What Our Customers Say</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <p>"Super easy booking and reliable service!"</p>
+        <p>- Customer A</p>
+      </div>
+      <div class="col-md-4">
+        <p>"Quick and convenient. Love the secure payment options!"</p>
+        <p>- Customer B</p>
+      </div>
+      <div class="col-md-4">
+        <p>"Very user-friendly and accurate schedules!"</p>
+        <p>- Customer C</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact text-center">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out.</p>
+    <form class="mt-3">
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p>&copy; 2024 Railway Reservation System. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

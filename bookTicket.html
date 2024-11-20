@@ -12,33 +12,30 @@
 </head>
 <body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="row justify-content-center align-items-center" id="navbar">
-            <div class="col-1">
-                <div class="row">
-                    <div class="col">
-                        <a href="index.html"><div id="logo"></div></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-              <div class="row">
-                <div class="col"></div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col"></div>
-                    <div class="col-auto me-3 borderr"><a href="login.html"><h2>Log in</h2></a></div>
-                    <div class="col-auto me-3 borderr"><a href="register.html"><h2>Register</h2></a></div>
-                    <div class="col-auto me-3 borderr"><a href="contactUs.html"><h2>Contact us</h2></a></div>
-                    <div class="col-auto me-3 borderr"><a href="offers.html"><h2>Offers</h2></a></div>
-                  </div>
-                </div>
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Easy Rail</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html" id="opt" style="color: white;">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html" id="opt" style="color: white;">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="register.html" id="opt" style="color: white;">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="offers.html" id="opt" style="color: white;">Offers</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactUs.html" id="opt" style="color: white;">Contact Us</a></li>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;;">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Book Railway Ticket</a>
+                <a class="dropdown-item" href="#">PNR Status Check</a>
               </div>
             </div>
-          </div>
+          </ul>
         </div>
-      </div>
+      </nav>
       <div class="row justify-content-center align-items-center" style="height: 92vh;">
         <div class="col"></div>
         <div class="col-10 mb-4" style="height: 200px;" id="searchBar">

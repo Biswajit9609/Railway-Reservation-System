@@ -1,7 +1,4 @@
-body{
-    background-image: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg);
-    background-size: cover;
-}
+
 #blur{
     background: linear-gradient(135deg,rgba(225,225,225,0.1),rgba(225,225,225,0));
     backdrop-filter: blur(10px);
